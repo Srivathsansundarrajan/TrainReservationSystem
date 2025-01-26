@@ -1,0 +1,61 @@
+classes : 
+
+	1. Train : 
+
+		. Name of the train
+	 	. Train Code
+		. No_of_seats available(we can represent this category wise too)
+		. waiting list(for each category)
+		
+		
+		. seat fair(we can represent this category wise too)
+		
+
+	
+		
+	2. person (parent class):
+	
+		. Name
+		. age
+		. phone no
+		. email
+		. tickets under the person name. He can also be a passenger. The one who 			booked ticket. It is basically  a arrayList with objects that has 			the details of the passengers  
+		
+		// note : to have the obj of the customer details we have to return a the 		customer details as a object after booking is done.
+
+		. wallet(if someone pays more than the fair of the ticket . Balance will be 		  stored here and it can be used later)
+ 
+
+	3. passenger inherits person : 
+
+		unique elements	:
+		. aadhar no
+			
+		// note : phone no and email are optional for passenger.they becomes null 			if we didnt assign any value.
+			
+		// note : in the booking module we will be storing the passenger object for 			storing the passenger details.
+	
+	4. booking class : 
+
+		. train code
+
+		. respective trains's object(fetching it by using the train code to access all other values of that object for booking)
+
+		. display the seat info using the train object		
+
+		. get the no of seats(n) to be reserved and the category too.
+
+		. check for the availability
+
+		. error handling for waiting list(to display a prompt msg)
+
+		. create (n)unique passenger object and store it in a array List
+		// After creating this ArrayList we need to add it to the arrayList of (tickets under the person)
+
+		. display the total fair for the tickets
+
+		. once the payment is done we will be passing the arrayList of passengers as a value of the map with the key as name of the person who booked the ticket.
+		
+		
+
+		
